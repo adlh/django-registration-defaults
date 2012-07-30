@@ -1,26 +1,20 @@
 {% extends "registration/registration_base.html" %}
+{% load bootstrap_toolkit  %}
 {% block title %}Login{% endblock %}
 {% block content %}
 
+<h1>Sign in</h1>
+<br />
 {% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
+<p>Sorry, couldn't log you in with that combination of username and password. Please try again.</p>
 {% endif %}
 
 <form method="post" action="{% url django.contrib.auth.views.login %}">{% csrf_token %}
-<table>
-<tr>
-    <td>{{ form.username.label_tag }}</td>
-    <td>{{ form.username }}</td>
-</tr>
-<tr>
-    <td>{{ form.password.label_tag }}</td>
-    <td>{{ form.password }}</td>
-</tr>
-</table>
-<p><a href="{% url auth_password_reset %}">Forgot</a> your password?  <a href="{% url registration_register %}">Need an account</a>?</p>
-
-<input type="submit" value="login" />
+{{ form|as_bootstrap }}
+<input type="submit" value="Sign In" />
 <input type="hidden" name="next" value="{{ next }}" />
 </form>
+
+<p><a href="{% url auth_password_reset %}">Forgot</a> your password?  <a href="{% url registration_register %}">Need an account</a>?</p>
 
 {% endblock %}

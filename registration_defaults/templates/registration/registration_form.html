@@ -1,10 +1,18 @@
-{% extends "registration/registration_base.html" %}
-{% block title %}Register for an account{% endblock %}
+{% extends 'base.html' %} {% load bootstrap_toolkit  %}
+{% block title %}Register{% endblock %}
+
 {% block content %}
-<table>
-    <form method='post' action=''>{% csrf_token %}
-        {{ form }}
-        <tr><td></td><td><input type="submit" value="Send activation email" /></td>
+
+<h1>Register an account</h1>
+<br />
+<p>Fill out this form to create an account. 
+<br />
+You will need to confirm your registration through e-mail so be sure to use a valid e-mail address.</p>
+
+<form style="margin-left:auto;margin-right:auto;" method="POST"> {% csrf_token %}
+	{{ form|as_bootstrap }}
+	<div style="margin-left: auto; margin-right: auto;text-align:center;">
+		<p style="text-align: center;"><input type="submit" class="btn primary" value="Send activation e-mail"></p>
+	</div>
     </form>
-</table>
 {% endblock %}
