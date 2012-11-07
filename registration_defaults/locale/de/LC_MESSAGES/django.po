@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-31 08:19+0000\n"
+"PO-Revision-Date: 2012-10-31 09:57\n"
+"Last-Translator:   <adlhuerta@metamorfosys.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Translated-Using: django-rosetta 0.6.5\n"
+
+#: templates/registration/activate.html:4
+#: templates/registration/activation_complete.html:4
+msgid "Activation complete"
+msgstr "Aktivierung abgeschlossen"
+
+#: templates/registration/activate.html:4
+msgid "Activation problem"
+msgstr "Problem bei der Aktivierung"
+
+#: templates/registration/activate.html:9
+#: templates/registration/activation_complete.html:7
+msgid "Thanks"
+msgstr "Danke"
+
+#: templates/registration/activate.html:9
+#: templates/registration/activation_complete.html:7
+#, python-format
+msgid ""
+"activation complete!  You may now <a href='%(auth_login_url)s'>login</a> "
+"using the username and password you set at registration."
+msgstr ""
+"Aktivierung abgeschlossen! Du kannst dich jetzt mit dem Benutzernamen und "
+"Passwort, die Du bei der Registrierung festgelegt hast, <a "
+"href='%(auth_login_url)s'>anmelden</a>."
+
+#: templates/registration/activate.html:12
+msgid ""
+"Oops &ndash; it seems that your activation key is invalid.  Please check the"
+" url again."
+msgstr ""
+"Upps &ndash; der verwendete Aktivierungsschlüssel ist ungültig. Bitte "
+"überprüfe die URL erneut."
+
+#: templates/registration/activation_email.txt:1
+#, python-format
+msgid ""
+"You (or someone pretending to be you) have asked to register an account at \n"
+"%(site_name)s.  If this wasn't you, please ignore this email\n"
+"and your address will be removed from our records."
+msgstr ""
+"Ein Registrierungsvorgang bei uns (%(site_name)s) wurde mit dieser Email-"
+"Ardesse gestartet. Wenn Du diesen Vorgang nicht selbst durchgeführt haben "
+"sollst oder die Registrierung nicht mehr erwünscht ist, reicht es, wenn Du "
+"diese Email ignorierst. Deine Email-Adresse wird dann automatisch aus "
+"unserem System entfernt."
+
+#: templates/registration/activation_email.txt:5
+#, python-format
+msgid ""
+"To activate this account, please click the following link within the next \n"
+"%(expiration_days)s days:"
+msgstr ""
+"Um Dein Account zu aktivieren, bitte klicke auf den folgenden Link innerhalb"
+" den nächsten %(expiration_days)s Tagen:"
+
+#: templates/registration/activation_email.txt:10
+#, python-format
+msgid ""
+"Sincerely,\n"
+"%(site_name)s Management"
+msgstr ""
+"Mit freundlichen Grüßen,\n"
+"Das Team von %(site_name)s"
+
+#: templates/registration/activation_email_subject.txt:1
+#, python-format
+msgid "Account registration for %(site_name)s"
+msgstr "Account-Registrierung bei %(site_name)s"
+
+#: templates/registration/login.html:4
+msgid "Login"
+msgstr "Login"
+
+#: templates/registration/login.html:10
+msgid ""
+"Sorry, couldn't log you in with that combination of username and password. "
+"Please try again."
+msgstr ""
+"Es tut uns Leid. Die Kombination aus Benutzername und Passwort ist falsch. "
+"Bitte versuche es erneut."
+
+#: templates/registration/login.html:15
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: templates/registration/login.html:20
+#, python-format
+msgid ""
+"\n"
+"<p><a href=\"%(auth_password_reset_url)s\">Forgot</a> your password?  <a href=\"%(registration_register_url)s\">Need an account</a>?</p>\n"
+msgstr ""
+"\n"
+"<p>Passwort <a href=\"%(auth_password_reset_url)s\">vergessen</a>? <a href=\"%(registration_register_url)s\">Brauchst Du einen Account</a>?</p>\n"
+
+#: templates/registration/logout.html:3
+msgid "Logged out"
+msgstr "Abgemeldet"
+
+#: templates/registration/logout.html:6
+msgid "Successfully logged out!"
+msgstr "Erfolgreich abgemeldet!"
+
+#: templates/registration/password_change_done.html:3
+msgid "Password changed"
+msgstr "Passwort geändert"
+
+#: templates/registration/password_change_done.html:6
+msgid "Password successfully changed!"
+msgstr "Passwort erfolgreich geändert!"
+
+#: templates/registration/password_change_form.html:4
+#: templates/registration/password_change_form.html:10
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: templates/registration/password_change_form.html:6
+msgid "Change Password"
+msgstr "Passwort Ändern"
+
+#: templates/registration/password_reset_complete.html:3
+msgid "Password reset complete"
+msgstr "Zurücksetzen des Passworts abgeschlossen"
+
+#: templates/registration/password_reset_complete.html:5
+#, python-format
+msgid ""
+"Your password has been reset!  You may now <a href=\"%(login_url)s\">log "
+"in</a>."
+msgstr ""
+"Dein Passwort wurde zurückgesetzt! Du kannst dich jetzt  <a "
+"href=\"%(login_url)s\">anmelden</a>."
+
+#: templates/registration/password_reset_confirm.html:4
+msgid "Confirm password reset"
+msgstr "Password-Zurücksetzen bestätigen"
+
+#: templates/registration/password_reset_confirm.html:6
+msgid "Confirm Password Reset"
+msgstr "Password-Zurücksetzen bestätigen"
+
+#: templates/registration/password_reset_confirm.html:8
+msgid "Enter your new password below to reset your password:"
+msgstr "Gibt Dein neues Passwort ein, um das Passwort zurückzusetzen:"
+
+#: templates/registration/password_reset_confirm.html:13
+msgid "Set password"
+msgstr "Passwort setzen"
+
+#: templates/registration/password_reset_done.html:3
+msgid "Password reset"
+msgstr "Passwort zurücksetzen"
+
+#: templates/registration/password_reset_done.html:6
+msgid ""
+"\n"
+"We have sent you an email with a link to reset your password.  Please check\n"
+"your email and click the link to continue.\n"
+msgstr ""
+"\n"
+"Wir haben dich eine E-Mail mit einem Link zum Zurücksetzen des Passworts geschickt. Bitte öffne die E-Mail und klicke auf den Link, um fortzufahren.\n"
+
+#: templates/registration/password_reset_email.html:2
+msgid "Greetings"
+msgstr "Hallo"
+
+#: templates/registration/password_reset_email.html:4
+#, python-format
+msgid ""
+"You are receiving this email because you (or someone pretending to be you)\n"
+"requested that your password be reset on the %(domain)s site.  If you do not \n"
+"wish to reset your password, please ignore this message."
+msgstr ""
+"Du erhältst diese E-Mail, weil wir eine Anforderung zum Zurücksetzen Deines Passworts bei uns:\n"
+"%(domain)s\n"
+"bekommen haben. Wenn Du diesen Vorgang nicht gestartet hast, oder nicht mehr dein Passwort zurücksetzen willst, dann reicht es, diese Email zu ignorieren."
+
+#: templates/registration/password_reset_email.html:8
+msgid ""
+"To reset your password, please click the following link, or copy and paste "
+"it into your web browser:"
+msgstr ""
+"Um Dein Passwort zurückzusetzen, klicke bitte auf den folgenden Link oder "
+"kopiere und füge ihn in Deinen Webbrowser:"
+
+#: templates/registration/password_reset_email.html:12
+msgid "Your username, in case you've forgotten:"
+msgstr "Dein Benutzername, falls du den vergessen haben solltest:"
+
+#: templates/registration/password_reset_email.html:14
+#, python-format
+msgid ""
+"\n"
+"Best regards,\n"
+"%(site_name)s Management\n"
+msgstr ""
+"\n"
+"Mit freundlichen Grüßen,\n"
+"Das Team von %(site_name)s\n"
+
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:12
+msgid "Reset password"
+msgstr "Passwort zurücksetzen"
+
+#: templates/registration/password_reset_form.html:6
+msgid "Password Reset"
+msgstr "Passwort Zurücksetzen"
+
+#: templates/registration/password_reset_form.html:8
+msgid ""
+"Forgot your password?  Enter your email in the form below and we'll send you"
+" instructions for creating a new one."
+msgstr ""
+"Passwort vergessen? Schicke das ausgefüllte Formular und wir werden Dir "
+"Anweisungen zum Erstellen eines neuen Passworts per E-Mail schicken."
+
+#: templates/registration/registration_complete.html:3
+msgid "Activation email sent"
+msgstr "Aktivierungs-E-Mail abgeschickt"
+
+#: templates/registration/registration_complete.html:5
+msgid ""
+"An activation email has been sent.  Please check your email and click on the"
+" link to activate your account."
+msgstr ""
+"Eine Aktivierungs-E-Mail wurde abgeschickt. Bitte öffne sie und klicke auf "
+"den beigefügten Link, um Dein Konto zu aktivieren."
+
+#: templates/registration/registration_form.html:3
+msgid "Register"
+msgstr "Registrieren"
+
+#: templates/registration/registration_form.html:7
+msgid "Register an account"
+msgstr "Neues Account registrieren"
+
+#: templates/registration/registration_form.html:9
+msgid "Fill out this form to create an account."
+msgstr "Fülle dieses Formular aus, um ein Konto zu erstellen."
+
+#: templates/registration/registration_form.html:11
+msgid ""
+"You will need to confirm your registration through e-mail so be sure to use "
+"a valid e-mail address."
+msgstr ""
+"Du werdest anschließend Deine Angaben per E-Mail bestätigen müssen, also "
+"verwende bitte nur eine gültige E-Mail-Adresse."
+
+#: templates/registration/registration_form.html:16
+msgid "Send activation e-mail"
+msgstr "Aktivierungs-E-Mail senden"

@@ -1,20 +1,24 @@
 {% extends "registration/registration_base.html" %}
 {% load bootstrap_toolkit  %}
-{% block title %}Login{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Login" %}{% endblock %}
 {% block content %}
 
 <h1>Sign in</h1>
 <br />
 {% if form.errors %}
-<p>Sorry, couldn't log you in with that combination of username and password. Please try again.</p>
+<p>{% trans "Sorry, couldn't log you in with that combination of username and password. Please try again." %}</p>
 {% endif %}
 
 <form method="post" action="{% url django.contrib.auth.views.login %}">{% csrf_token %}
 {{ form|as_bootstrap }}
-<input type="submit" value="Sign In" />
+<input type="submit" value="{% trans "Sign In" %}" />
 <input type="hidden" name="next" value="{{ next }}" />
 </form>
-
-<p><a href="{% url auth_password_reset %}">Forgot</a> your password?  <a href="{% url registration_register %}">Need an account</a>?</p>
+{% url auth_password_reset as auth_password_reset_url %}
+{% url registration_register as registration_register_url %}
+{% blocktrans %}
+<p><a href="{{ auth_password_reset_url }}">Forgot</a> your password?  <a href="{{ registration_register_url }}">Need an account</a>?</p>
+{% endblocktrans %}
 
 {% endblock %}
